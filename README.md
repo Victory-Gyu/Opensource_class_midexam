@@ -32,7 +32,7 @@ def runGame():
     game_over = 0 # 게임이 끝날 플레그를 담는 변수
     level=0 # 레벨을 나타내는 코드
     
-    jelly_image = pygame.image.load('C:/Users/jelly.png') #젤리이미지를 불러오는 코드
+    jelly_image = pygame.image.load('jelly.png') #젤리이미지를 불러오는 코드
     jellyX=120
     jellyY=150
     jelly_image = pygame.transform.scale(jelly_image, (jellyX, jellyY)) #젤리 크기 조정 코드
@@ -48,7 +48,7 @@ def runGame():
     while not done: 
         clock.tick(30)
         
-        background_image = pygame.image.load('C:/Users/background.jpg') #배경 사진 출력
+        background_image = pygame.image.load('background.jpg') #배경 사진 출력
         background_image = pygame.transform.scale(background_image, (1000, 800))
         screen.blit(background_image, (0, 0)) #배경화면 지정
         
@@ -123,3 +123,5 @@ def runGame():
 
 runGame()
 pygame.quit()
+
+# 사용된 사진 저장소 https://drive.google.com/drive/folders/1PeuO9wllaoCvOhkX5snLBhzQv3IcBTcF?usp=sharing
