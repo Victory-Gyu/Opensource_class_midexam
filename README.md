@@ -25,6 +25,7 @@ clock = pygame.time.Clock()
 
 def runGame():
     global done
+    
     score = 0 #쌓이는 점수의 변수
     start_time = int(time.time()) # 시작 시간을 입력하는 변수
     remain_time = 0 # 남은 시간을 담는 변수
