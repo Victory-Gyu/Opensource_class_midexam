@@ -1,5 +1,3 @@
-# Opensource_class_midexam
-
 ''' 젤리먹기게임 Rule
     : 이 게임은 여러 방향으로 움직이는 젤리를 마우스로 클릭하여 먹는 게임이다.
       젤리를 15개를 먹으면 레벨이 오른다. 레벨이 오를 때마다 젤리의 크기는 점점 작아진다.
@@ -41,8 +39,8 @@ def runGame():
     for i in range(5): #5개 생성
         jelly = pygame.Rect(jelly_image.get_rect()) #Rect() 함수를 이용하여 이미지를 넣어주는 코드입니다.
         jelly.left = random.randint(0, SCREEN_WIDTH) 
-        jelly.top = random.randint(0, SCREEN_HEIGHT) #좌표를 설정해주는 코드 먼저, left라는 변수를 random 값을 넣어 스크린의 width(size[0]) 안에 속하는 랜덤 x 좌표를 설정해주고, top이라는 변수에는 벌레의 시작점을 설정해줍니다.
-        dx = random.randint(-10, 10) #속도를 정해주는 dx, dy 변수를 선언해주는데 각 벌레의 이동 속도를 다르게 하기위해 random.randint() 함수를 통해 랜덤값을 넣어줍니다.
+        jelly.top = random.randint(0, SCREEN_HEIGHT) #좌표를 설정해주는 코드 먼저, left라는 변수를 random 값을 넣어 스크린의 width(size[0]) 안에 속하는 랜덤 x 좌표를 설정해주고, top이라는 변수에는 젤리의 시작점을 설정해줍니다.
+        dx = random.randint(-10, 10) #속도를 정해주는 dx, dy 변수를 선언해주는데 각 젤리의 이동 속도를 다르게 하기위해 random.randint() 함수를 통해 랜덤값을 넣어줍니다.
         dy = random.randint(-10, 10)
         jellys.append((jelly, dx, dy)) #리스트 안에 삽입하는 코드
 
